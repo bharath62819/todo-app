@@ -14,7 +14,7 @@ def signup(request):
         my_user = User.objects.create_user(uname,email,pwd)
         my_user.save()
         return redirect('/login')
-    return render(request,'todoapp/signup.html')
+    return render(request,'todoapp/index.html')
 
 def LogIn(request):
     if request.method=='POST':
